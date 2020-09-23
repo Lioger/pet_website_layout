@@ -1,9 +1,12 @@
 .navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
 
     &_elements {
+        margin: 15px 20px;
         color: $main-text-color;
         text-decoration: none;
         font-family: $main-font-family;

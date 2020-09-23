@@ -1,9 +1,10 @@
 .product-card {
-    max-width: 30%;
+    width: 31%;
+    margin: 0 10px 20px;
+    min-width: 350px;
     background: #FFFFFF;
     box-shadow: 5px 5px 5px rgba(255, 180, 68, 0.34);
     border-radius: 50px;
-    margin: 0 10px 10px;
     display: flex;
     flex-direction: column;
     padding: 2rem;

@@ -1,11 +1,14 @@
 .about-box {
     display: flex;
     align-items: center;
-
+    &__left {
+        width: 40%;
+    }
     &__right {
-        min-width: 60%;
-        margin-left: 3rem;
+        min-width: 400px;
         display: flex;
+        flex-wrap: wrap;
+        margin-left: 10px;
     
         &_element {
             display: flex;

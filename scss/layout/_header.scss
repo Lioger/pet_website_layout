@@ -1,9 +1,6 @@
 .header {
     display: flex;
-    justify-content: flex-start;
-
-    &_logo {
-    }
+    justify-content: space-between;
 }
 
 .burger-menu {
