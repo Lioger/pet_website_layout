@@ -1,0 +1,23 @@
+{
+  "name": "happypet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "convert-sass": "node-sass ./scss/main.scss ./css/main.css -w",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lioger/Lioger.github.io.git"
+  },
+  "author": "Nick Stepanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lioger/Lioger.github.io/issues"
+  },
+  "homepage": "https://github.com/Lioger/Lioger.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

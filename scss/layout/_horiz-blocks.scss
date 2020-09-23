@@ -1,0 +1,19 @@
+.why-choose__blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.why-choose__block {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    padding: .3rem .2rem;
+}
+
+.why-choose__mini-titles {
+    margin: 0;
+}
+
+.why-choose__block-text {
+    margin-left: 1.5rem;
+}

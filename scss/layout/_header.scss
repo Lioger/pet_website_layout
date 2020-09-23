@@ -1,0 +1,30 @@
+.header {
+    margin: 2rem auto 0;
+    display: flex;
+
+    &_logo {
+        padding-top: .5rem;
+    }
+}
+
+.burger-menu {
+    display: none;
+    padding: .3rem 1rem;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    &_image {
+        width: 100%;
+        height: auto;
+    }
+
+    &:focus {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+}
+}

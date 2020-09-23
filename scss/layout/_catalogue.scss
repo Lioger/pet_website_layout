@@ -1,0 +1,20 @@
+.catalogue-box {
+    padding-right: 5rem;
+}
+
+.catalogue-blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.products-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

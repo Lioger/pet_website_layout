@@ -1,0 +1,67 @@
+.buttons {
+    outline: none;
+
+    &:focus {
+        border-color: $active-button-background-color;
+        box-shadow: $main-part-button--shadow_focus;
+    }
+}
+
+.banner__left_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 3.5rem;
+    border-radius: 40px;
+    border: 0;
+    background: $main-part-button-background;
+    box-shadow: $main-part-button--shadow;
+    color: $active-button-text-color;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+
+
+}
+
+.catalogue-blocks_buttons {
+    width: 16%;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    padding: .7rem 2.9rem;
+    border: 1px solid #000;
+    background: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+
+    &:hover{
+        border-color: $active-button-background-color;
+        box-shadow: $main-part-button--shadow_hover;
+    }
+
+    &_chosen {
+    background: $active-button-background-color;
+    color: $active-button-text-color;
+    font-weight: 600;
+    border: none;
+    }
+}
+
+.button-submit {
+    border: 0;
+    background: $active-button-background-color;
+    border-radius: 50px;
+    color: $active-button-text-color;
+    width: 25%;
+    height: 2rem;
+    font-size: 1rem;
+    margin: .8rem 0 1rem;
+}
