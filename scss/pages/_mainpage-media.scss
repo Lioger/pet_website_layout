@@ -79,6 +79,7 @@
 
     .about-box {
         flex-wrap: wrap;
+
         &__left {
             width: 90%;
             padding: 0 5%;
@@ -86,12 +87,14 @@
         &__right {
             width: 80%;
             margin: 1rem 5% 0;
-            flex-wrap: nowrap;
         }
     }
 
     .footer-box {
         margin-bottom: 0;
+        &_container {
+            flex-wrap: wrap;
+        }
     }
     .footer-blocks {
         padding: 10px;

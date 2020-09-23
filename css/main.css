@@ -165,7 +165,7 @@ html {
 .product-card {
   width: 31%;
   margin: 0 10px 20px;
-  min-width: 350px;
+  min-width: 300px;
   background: #FFFFFF;
   -webkit-box-shadow: 5px 5px 5px rgba(255, 180, 68, 0.34);
           box-shadow: 5px 5px 5px rgba(255, 180, 68, 0.34);
@@ -565,7 +565,7 @@ html {
 }
 
 .photos-people {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -729,11 +729,13 @@ html {
   .about-box__right {
     width: 80%;
     margin: 1rem 5% 0;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
   }
   .footer-box {
     margin-bottom: 0;
+  }
+  .footer-box_container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .footer-blocks {
     padding: 10px;
