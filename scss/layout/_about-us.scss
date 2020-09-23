@@ -1,33 +1,32 @@
-.about-box {
+.aboutus {
     display: flex;
     align-items: center;
+    
     &__left {
         width: 40%;
+        min-width: 300px;
+        padding: 15px 25px;
     }
     &__right {
-        min-width: 400px;
+        width: 60%;
+        min-width: 300px;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
-        margin-left: 10px;
     
-        &_element {
+        &__item {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 5px 10px 10px;
+            padding: 10px;
         }
     }
-}
+    &__man-photo {
+        max-width: 100%;
+        height: auto;
+    }
 
-.photos-people {
-    max-width: 100%;
-    height: auto;
-}
-
-.people-names {
-    font-weight: 600;
-}
-
-.about-box__left_watch-next-box {
-    margin-top: 1rem;
+    &__people-names {
+        font-weight: 600;
+    }
 }

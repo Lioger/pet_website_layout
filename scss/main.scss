@@ -5,6 +5,7 @@
 }
 
 html {
+    min-width: 320px;
     scroll-behavior: smooth;
 }
 
@@ -21,10 +22,11 @@ html {
 
 @import "./layout/header";
 @import "./layout/navigation";
-@import "./layout/forms";
-@import "./layout/horiz-blocks";
+@import "./layout/banner";
+@import "./layout/why-us";
 @import "./layout/catalogue";
 @import "./layout/photogrid";
+@import "./layout/forms";
 @import "./layout/about-us";
 @import "./layout/footer";
 

@@ -1,62 +1,54 @@
 .buttons {
     outline: none;
-
-    &:focus {
-        border-color: $active-button-background-color;
-        box-shadow: $main-part-button--shadow_focus;
-    }
-}
-
-.banner__left_button {
-    padding: 15px 20px;
-    border-radius: 40px;
     border: 0;
-    background: $main-part-button-background;
-    box-shadow: $main-part-button--shadow;
-    color: $active-button-text-color;
-    font-size: 1.7rem;
-    font-weight: 600;
-    text-decoration: none;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
-
-
-}
-
-.catalogue-blocks_buttons {
-    font-size: 1.3rem;
-    font-weight: lighter;
-    padding: 15px 40px;
-    margin: 10px;
-    border: 1px solid #000;
-    background: none;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
 
+    &:focus {
+        box-shadow: $main-part-button--shadow_focus;
+    }
+}
+
+.button-box__button {
+    padding: 15px 20px;
+
+    &_banner {
+        background: $main-part-button-background;
+        box-shadow: $main-part-button--shadow;
+        color: $active-button-text-color;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+}
+
+.blocks__buttons {
+    font-size: 1.3rem;
+    width: 15%;
+    min-width: 100px;
+    padding: 15px 0;
+    margin: 5px;
+    border: 1px solid #000;
+    background: none;
+
     &:hover{
         border-color: $active-button-background-color;
-        box-shadow: $main-part-button--shadow_hover;
     }
 
     &_chosen {
-    background: $active-button-background-color;
-    color: $active-button-text-color;
-    font-weight: 600;
-    border: none;
+        background: $active-button-background-color;
+        color: $active-button-text-color;
+        font-weight: 600;
+        border: none;
     }
 }
 
 .button-submit {
     border: 0;
     background: $active-button-background-color;
-    border-radius: 50px;
     color: $active-button-text-color;
     padding: 10px 15px;
     font-size: 1rem;
-    margin: .8rem 0 1rem;
 }

@@ -8,157 +8,179 @@
 </head>
 <body>
     <div class="main">
-        <header class="page-elements header">
-            <a href="#"><img class="header_logo" src="./img/logo.png"></a>
-            <nav class="navigation">
-                <a class="navigation_elements" href="#">Главная</a>
-                <a class="navigation_elements" href="#">Друзья</a>
-                <a class="navigation_elements" href="#">О сервисе</a>
-                <a class="navigation_elements" href="#">Контакты</a>
-            </nav>
-            <div class="cart">
-                <img class="cart_icon" src="./img/cart.png">
+        <header class="header">
+            <div class="header__top-part">
+                <a href="#" class="header__logobox logobox">
+                    <img class="logobox__logo" src="./img/logo.png">
+                </a>
+                <nav class="header__navigation navigation">
+                    <a class="navigation__elements" href="#">Главная</a>
+                    <a class="navigation__elements" href="#">Друзья</a>
+                    <a class="navigation__elements" href="#">О сервисе</a>
+                    <a class="navigation__elements" href="#">Контакты</a>
+                </nav>
+                <div class="header__cart cart">
+                    <img class="cart__icon" src="./img/cart.png">
+                </div>
+                <a class="header__burger-menu burger-menu">
+                    <img src="./img/burger.png" alt="" class="burger-menu__image">
+                </a>
             </div>
-            <a class="burger-menu"><img src="./img/burger.png" alt="" class="burger-menu__image"></a>
-        </header>
-        <div class="page-elements main-page-banner">
-            <div class="main-page-banner__left">
-                <div class="main-page-banner__left_title">Твой новый друг <br> с доставкой на дом</div>
-                <p class="main-page-banner__left_text">Онлайн магазин домащних животных подарит тебе нового друга в несколько кликов. Действуй!</p>
-                <div class="banner-button-box"><a class="buttons banner__left_button" href="#catalogue">Посмотреть друзей</a></div>
-            </div>
-        </div>
-        <div class="mainpart-box">
-            <div class="page-elements why-choose-box">
-                <div class="box-title">Почему выбирают наших друзей</div>
-                <div class="why-choose__blocks">
-                    <div class="why-choose__block">
-                        <div class="why-choose__icon-box"><img src="./img/Group8.png" class="why-choose__icon"></div>
-                        <div class="why-choose__block-text"><h3 class="mini-titles">Их много</h3>
-                        Огромный выбор животных</div>
-                    </div>
-                    <div class="why-choose__block">
-                        <div class="why-choose__icon-box"><img src="./img/Group2.png" class="why-choose__icon"></div>
-                        <div class="why-choose__block-text"><h3 class="mini-titles">Они здоровы</h3>
-                        Мы заботимся о каждом питомце, который с нами</div>
-                    </div>
-                    <div class="why-choose__block">
-                        <div class="why-choose__icon-box"><img src="./img/Group3.png" class="why-choose__icon"></div>
-                        <div class="why-choose__block-text"><h3 class="mini-titles">Их любят</h3>
-                        Мы окружаем любовью и заботой наших друзей</div>
+            <div class="header__main-part">
+                <div class="banner">
+                    <div class="banner__banner-text banner-text">
+                        <div class="banner-text__item banner-text__title">Твой новый друг <br> с доставкой на дом</div>
+                        <p class="banner-text__item banner-text__text">Онлайн магазин домащних животных подарит тебе нового друга в несколько кликов. Действуй!</p>
+                        <div class="banner-text__item banner-text__button-box button-box">
+                            <button class="buttons button-box__button button-box__button_banner" href="#catalogue">Посмотреть друзей</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="page-elements catalogue-box">
+        </header>
+        <div class="mainpart">
+            <div class="container container__whyus">
+                <div class="box-title">Почему выбирают наших друзей</div>
+                <div class="why-us">
+                    <div class="why-us__block block">
+                        <div class="why-us__icon-box block__icon-box icon-box">
+                            <img src="./img/Group8.png" class="why-us__icon icon-box__icon">
+                        </div>
+                        <div class="why-us__text-box block__text-box text-box">
+                            <h3 class="text-box__titles">Их много</h3>
+                            Огромный выбор животных
+                        </div>
+                    </div>
+                    <div class="why-us__block block">
+                        <div class="why-us__icon-box block__icon-box">
+                            <img src="./img/Group2.png" class="why-us__icon icon-box__icon">
+                        </div>
+                        <div class="why-us__text-box block__text-box text-box">
+                            <h3 class="text-box__titles">Они здоровы</h3>
+                            Мы заботимся о каждом питомце, который с нами
+                        </div>
+                    </div>
+                    <div class="why-us__block block">
+                        <div class="why-us__icon-box block__icon-box">
+                            <img src="./img/Group3.png" class="why-us__icon icon-box__icon">
+                        </div>
+                        <div class="why-us__text-box block__text-box text-box">
+                            <h3 class="text-box__titles">Их любят</h3>
+                            Мы окружаем любовью и заботой наших друзей
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container container__catalogue">
                 <a name="catalogue"></a>
                 <div class="box-title">Каталог животных</div>
-                <div class="catalogue-blocks">
-                    <input type="submit" class="buttons catalogue-blocks_buttons catalogue-blocks_buttons_chosen" value="Все">
-                    <input type="submit" class="buttons catalogue-blocks_buttons" value="Кошки">
-                    <input type="submit" class="buttons catalogue-blocks_buttons" value="Собаки">
-                    <input type="submit" class="buttons catalogue-blocks_buttons" value="Хорьки">
-                    <input type="submit" class="buttons catalogue-blocks_buttons" value="Птицы">
-                    <input type="submit" class="buttons catalogue-blocks_buttons" value="Кролики">
+                <div class="catalogue__blocks blocks">
+                    <input type="submit" class="buttons blocks__buttons blocks__buttons_chosen" value="Все">
+                    <input type="submit" class="buttons blocks__buttons" value="Кошки">
+                    <input type="submit" class="buttons blocks__buttons" value="Собаки">
+                    <input type="submit" class="buttons blocks__buttons" value="Хорьки">
+                    <input type="submit" class="buttons blocks__buttons" value="Птицы">
+                    <input type="submit" class="buttons blocks__buttons" value="Кролики">
                 </div>
                 <div class="products-box">
-                    <div class="product-cards">
-                        <div class="product-card product-card_1">
-                            <div class="product-card_age">
-                                <div class="product-card_age_month-count">4</div>
-                                <div class="month">Месяца</div>
+                    <div class="products-box__product-cards product-cards">
+                        <div class="product-cards__item product-cards__item_1">
+                            <div class="product-cards__age age">
+                                <div class="product-cards__age__month-count">4</div>
+                                <div class="product-cards__age__month">Месяца</div>
                             </div>
-                            <div class="product-card_image"><img src="./img/image2.png" class="product-card_image"></div>
-                            <div class="product-card_description">
-                                <div class="product-card_description_pet-title">Такса</div>
-                                <div class="product-card_pet-description">Охотничья порода собаки с короткими ногами. Питомец быстро станет верным другом человека</div>
+                            <div class="product-cards__image-box image-box"><img src="./img/image2.png" class="image-box__image image-box__image_product"></div>
+                            <div class="product-cards__description description">
+                                <div class="description__pet-title">Такса</div>
+                                <div class="description__pet-description">Охотничья порода собаки с короткими ногами. Питомец быстро станет верным другом человека</div>
                             </div>
-                            <div class="product-card_purchase">
-                                <div class="product-card_purchase_pet-price">7 000 р.</div>
-                                <div class="product-card_purchase-cart"><img src="./img/purchase.png"></div>
-                            </div>
-                        </div>
-                        <div class="product-card product-card_2">
-                            <div class="product-card_age">
-                                <div class="product-card_age_month-count">2</div>
-                                <div class="month">Месяца</div>
-                            </div>
-                            <div class="product-card_image"><img src="./img/image9.png" class="product-card_image"></div>
-                            <div class="product-card_description">
-                                <div class="product-card_description_pet-title">Абиссинская кошка</div>
-                                <div class="product-card_pet-description">Одна из самых древних пород кошек</div>
-                            </div>
-                            <div class="product-card_purchase">
-                                <div class="product-card_purchase_pet-price">13 000 р.</div>
-                                <div class="product-card_purchase-cart"><img src="./img/purchase.png"></div>
+                            <div class="product-cards__purchase purchase">
+                                <div class="purchase__pet-price">7 000 р.</div>
+                                <div class="purchase__purchase-cart-box"><img src="./img/purchase.png"></div>
                             </div>
                         </div>
-                        <div class="product-card product-card_3">
-                            <div class="product-card_age">
-                                <div class="product-card_age_month-count">3</div>
-                                <div class="month">Месяца</div>
+                        <div class="product-cards__item product-cards__item_2">
+                            <div class="product-cards__age age">
+                                <div class="product-cards__age__month-count">2</div>
+                                <div class="product-cards__age__month">Месяца</div>
                             </div>
-                            <div class="product-card_image"><img src="./img/image24.png" class="product-card_image"></div>
-                            <div class="product-card_description">
-                                <div class="product-card_description_pet-title">Хорек</div>
-                                <div class="product-card_pet-description">Род млекопитающих семейства куньих.</div>
+                            <div class="product-cards__image-box image-box"><img src="./img/image9.png" class="image-box__image image-box__image_product"></div>
+                            <div class="product-cards__description description">
+                                <div class="description__pet-title">Абиссинская кошка</div>
+                                <div class="description__pet-description">Одна из самых древних пород кошек</div>
                             </div>
-                            <div class="product-card_purchase">
-                                <div class="product-card_purchase_pet-price">10 000 р.</div>
-                                <div class="product-card_purchase-cart"><img src="./img/purchase.png"></div>
+                            <div class="product-cards__purchase purchase">
+                                <div class="purchase__pet-price">13 000 р.</div>
+                                <div class="purchase__purchase-cart-box"><img src="./img/purchase.png"></div>
                             </div>
                         </div>
-                        <div class="product-card product-card_4">
-                            <div class="product-card_age">
-                                <div class="product-card_age_month-count">1</div
-                                    ><div class="month">Месяц</div>
+                        <div class="product-cards__item product-cards__item_3">
+                            <div class="product-cards__age age">
+                                <div class="product-cards__age__month-count">3</div>
+                                <div class="product-cards__age__month">Месяца</div>
+                            </div>
+                            <div class="product-cards__image-box image-box"><img src="./img/image24.png" class="image-box__image image-box__image_product"></div>
+                            <div class="product-cards__description description">
+                                <div class="description__pet-title">Хорек</div>
+                                <div class="description__pet-description">Род млекопитающих семейства куньих.</div>
+                            </div>
+                            <div class="product-cards__purchase purchase">
+                                <div class="purchase__pet-price">10 000 р.</div>
+                                <div class="purchase__purchase-cart-box"><img src="./img/purchase.png"></div>
+                            </div>
+                        </div>
+                        <div class="product-cards__item product-cards__item_4">
+                            <div class="product-cards__age age">
+                                <div class="product-cards__age__month-count">1</div
+                                    ><div class="product-cards__age__month">Месяц</div>
                                 </div>
-                            <div class="product-card_image"><img src="./img/image11.png" class="product-card_image"></div>
-                            <div class="product-card_description">
-                                <div class="product-card_description_pet-title">Кролик</div>
-                                <div class="product-card_pet-description">Питомец быстро станет верным другом человека</div>
+                            <div class="product-cards__image-box image-box"><img src="./img/image11.png" class="image-box__image image-box__image_product"></div>
+                            <div class="product-cards__description description">
+                                <div class="description__pet-title">Кролик</div>
+                                <div class="description__pet-description">Питомец быстро станет верным другом человека</div>
                             </div>
-                            <div class="product-card_purchase">
-                                <div class="product-card_purchase_pet-price">3 000 р.</div>
-                                <div class="product-card_purchase-cart"><img src="./img/purchase.png"></div>
-                            </div>
-                        </div>
-                        <div class="product-card product-card_5">
-                            <div class="product-card_age">
-                                <div class="product-card_age_month-count">4</div>
-                                <div class="month">Месяца</div>
-                            </div>
-                            <div class="product-card_image"><img src="./img/image12.png" class="product-card_image"></div>
-                            <div class="product-card_description">
-                                <div class="product-card_description_pet-title">Волнистый попугай</div>
-                                <div class="product-card_pet-description">Попугай - семейство птиц отряда попугаеобразных.</div>
-                            </div>
-                            <div class="product-card_purchase">
-                                <div class="product-card_purchase_pet-price">2 000 р.</div>
-                                <div class="product-card_purchase-cart"><img src="./img/purchase.png"></div>
+                            <div class="product-cards__purchase purchase">
+                                <div class="purchase__pet-price">3 000 р.</div>
+                                <div class="purchase__purchase-cart-box"><img src="./img/purchase.png"></div>
                             </div>
                         </div>
-                        <div class="product-card product-card_6">
-                            <div class="product-card_age">
-                                <div class="product-card_age_month-count">4</div>
-                                <div class="month">Месяца</div>
+                        <div class="product-cards__item product-cards__item_5">
+                            <div class="product-cards__age age">
+                                <div class="product-cards__age__month-count">4</div>
+                                <div class="product-cards__age__month">Месяца</div>
                             </div>
-                            <div class="product-card_image-box"><img src="./img/cat.png" class="product-card_image"></div>
-                            <div class="product-card_description">
-                                <div class="product-card_description_pet-title">Кошка</div>
-                                <div class="product-card_pet-description">Охотничья порода собаки с короткими ногами.</div>
+                            <div class="product-cards__image-box image-box"><img src="./img/image12.png" class="image-box__image image-box__image_product"></div>
+                            <div class="product-cards__description description">
+                                <div class="description__pet-title">Волнистый попугай</div>
+                                <div class="description__pet-description">Попугай - семейство птиц отряда попугаеобразных.</div>
                             </div>
-                            <div class="product-card_purchase">
-                                <div class="product-card_purchase_pet-price">27 000 р.</div>
-                                <div class="product-card_purchase-cart"><img src="./img/purchase.png"></div>
+                            <div class="product-cards__purchase purchase">
+                                <div class="purchase__pet-price">2 000 р.</div>
+                                <div class="purchase__purchase-cart-box"><img src="./img/purchase.png"></div>
+                            </div>
+                        </div>
+                        <div class="product-cards__item product-cards__item_6">
+                            <div class="product-cards__age age">
+                                <div class="product-cards__age__month-count">4</div>
+                                <div class="product-cards__age__month">Месяца</div>
+                            </div>
+                            <div class="product-cards__image-box image-box"><img src="./img/cat.png" class="image-box__image image-box__image_product"></div>
+                            <div class="product-cards__description description">
+                                <div class="description__pet-title">Кошка</div>
+                                <div class="description__pet-description">Охотничья порода собаки с короткими ногами.</div>
+                            </div>
+                            <div class="product-cards__purchase purchase">
+                                <div class="purchase__pet-price">27 000 р.</div>
+                                <div class="purchase__purchase-cart-box"><img src="./img/purchase.png"></div>
                             </div>
                         </div>
                     </div>
-                    <a href="" class="watch-next watch-next_left">Смотреть дальше <img src="./img/Vector.png" class="watch-next_vector"></a>
+                    <a href="" class="watch-next watch-next_products-box">Смотреть дальше <img src="./img/Vector.png" class="watch-next_vector"></a>
                 </div>
             </div>
-            <div class="page-elements photogrid-box">
-                <div class="box-title">Мы любим поиграть</div>
-                <div class="grid">
+            <div class="container container__galley-grid">
+                <div class="box-title box-title_grid">Мы любим поиграть</div>
+                <div class="grid gallery-grid">
                     <div class="grid-item grid-item_1"><img src="./img/image14.png" alt="" class="grid_images"></div>
                     <div class="grid-item grid-item_2"><img src="./img/image18.png" alt="" class="grid_images"></div>
                     <div class="grid-item grid-item_3"><img src="./img/image19.png" alt="" class="grid_images"></div>
@@ -169,68 +191,71 @@
                     <div class="grid-item grid-item_8"><img src="./img/image15.png" alt="" class="grid_images"></div>
                 </div> 
                 <div class="watch-next-button">
-                    <a class="watch-next">Смотреть дальше <img src="./img/Vector.png" class="watch-next_vector"></a>
+                    <a class="watch-next watch-next_grid">Смотреть дальше <img src="./img/Vector.png" class="watch-next_vector"></a>
                 </div>
             </div>
-            <div class="page-elements form-box">
+            <div class="container container__form">
                 <div class="box-title">Есть вопросы? Задавайте!</div>
-                <div class="form-container">
-                    <form class="form">
-                        <div class="input-group">
-                            <label for="name" class="form-labels">Имя</label>
+                <div class="form-box">
+                    <form class="form-box__form form">
+                        <div class="form__input-group">
+                            <label for="name" class="form__labels">Имя</label>
                             <input class="value-inputs" type="text" name="name">
                         </div>
-                        <div class="input-group">
-                            <label for="email" class="form-labels">Почта</label>
+                        <div class="form__input-group">
+                            <label for="email" class="form__labels">Почта</label>
                             <input class="value-inputs" type="email" name="email">
                         </div>
-                        <div class="input-group">
-                            <label for="message" class="form-labels">Сообщение</label>
+                        <div class="form__input-group">
+                            <label for="message" class="form__labels">Сообщение</label>
                             <textarea class="value-inputs textarea" name="message"></textarea>
                         </div>
                         <input class="buttons button-submit" type="submit" value="Отправить">
                     </form>
                 </div>
             </div>
-            <div class="page-elements about-box">
-                <div class="about-box__left">
-                    <div class="box-title">О питомнике Happy pet</div>
-                    <div class="about-box__left_description">
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbspОхотничья порода собаки с короткими ногами. Считается чрезмерно активной, как вечный работающий моторчик. Питомец быстро станет верным другом человека. 
-                        Охотничья порода собаки с короткими ногами. Считается чрезмерно активной, как вечный работающий моторчик. Питомец быстро станет верным другом человека            
-                    </div> 
-                    <div class="watch-next-box about-box__left_watch-next-box">
-                        <div class="watch-next">Смотреть дальше <img src="./img/Vector.png" class="watch-next_vector"></div>
+            <div class="container container__aboutus">
+                <div class="aboutus">
+                    <div class="aboutus__left">
+                        <div class="box-title">О питомнике Happy pet</div>
+                        <div class="aboutus__left__description">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            Охотничья порода собаки с короткими ногами. Считается чрезмерно активной, как вечный работающий моторчик. Питомец быстро станет верным другом человека. 
+                            Охотничья порода собаки с короткими ногами. Считается чрезмерно активной, как вечный работающий моторчик. Питомец быстро станет верным другом человека            
+                        </div> 
+                        <div class="watch-next watch-next_aboutus">
+                            <div class="watch-next">Смотреть дальше <img src="./img/Vector.png" class="watch-next_vector"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="about-box__right">
-                    <div class="about-box__right_element">
-                        <div class="man-photo-box"><img src="./img/Ellipse.png" alt="" class="about-box__right--photos-people"></div>
-                        <div class="people-names">Алексей</div>
-                    </div>
-                    <div class="about-box__right_element">
-                        <div class="man-photo-box"><img src="./img/Ellipse1.png" alt="" class="about-box__right--photos-people"></div>
-                        <div class="people-names">Анна</div>
-                    </div>
-                    <div class="about-box__right_element">
-                        <div class="man-photo-box"><img src="./img/Ellipse2.png" alt="" class="about-box__right--photos-people"></div>
-                        <div class="people-names">Карина</div>
-                    </div>
-                    <div class="about-box__right_element">
-                        <div class="man-photo-box"><img src="./img/Ellipse3.png" alt="" class="about-box__right--photos-people"></div>
-                        <div class="people-names">Анастасия</div>
+                    <div class="aboutus__right">
+                        <div class="aboutus__right__item">
+                            <div class="man-photo-box aboutus__man-photo-box"><img src="./img/Ellipse.png" alt="" class="man-photo aboutus__man-photo"></div>
+                            <div class="people-names aboutus__people-names">Алексей</div>
+                        </div>
+                        <div class="aboutus__right__item">
+                            <div class="man-photo-box aboutus__man-photo-box"><img src="./img/Ellipse1.png" alt="" class="man-photo aboutus__man-photo"></div>
+                            <div class="people-names aboutus__people-names">Анна</div>
+                        </div>
+                        <div class="aboutus__right__item">
+                            <div class="man-photo-box aboutus__man-photo-box"><img src="./img/Ellipse2.png" alt="" class="man-photo aboutus__man-photo"></div>
+                            <div class="people-names aboutus__people-names">Карина</div>
+                        </div>
+                        <div class="aboutus__right__item">
+                            <div class="man-photo-box aboutus__man-photo-box"><img src="./img/Ellipse3.png" alt="" class="man-photo aboutus__man-photo"></div>
+                            <div class="people-names aboutus__people-names">Анастасия</div>
+                        </div>
                     </div>
                 </div>   
             </div>
         </div>
-        <footer class="footer">
-            <div class="page-elements footer-box">
-                <div class="footer-box_container">
-                    <div class="footer-blocks footer-blocks_1">
-                        <div class="logo-box"><img src="./img/logo.png" alt="" class="logo-box_logo"></div>
-                        <a href=#" class="menu-items menu-items-simple">Наша команда</a>
-                        <a href=#" class="menu-items menu-items-simple">Отзывы</a>
-                        <div class="menu-items menu-title">Мы в социальных сетях</div>
+        <footer class="footer__wrapper">
+            <div class="footer">
+                <div class="footer__container">
+                    <div class="footer__blocks footer__block_1">
+                        <div class="blocks__logo-box"><img src="./img/logo.png" alt="" class="logo-box__logo"></div>
+                        <a href=#" class="block__items block__items_simple">Наша команда</a>
+                        <a href=#" class="block__items block__items_simple">Отзывы</a>
+                        <div class="block__items block__items_title">Мы в социальных сетях</div>
                         <div class="social-nets">
                             <img src="./img/facebook.png" alt="" class="social-nets_logo">
                             <img src="./img/facebook.png" alt="" class="social-nets_logo">
@@ -238,22 +263,22 @@
                             <img src="./img/facebook.png" alt="" class="social-nets_logo">
                         </div>
                     </div>
-                    <div class="footer-blocks footer-blocks_2">
-                        <div class="menu-items menu-title">Приезжайте</div>
-                        <a href=#" class="menu-items menu-items-simple">г.Краснодар, ул Пушкина, д 129</a>
-                        <div class="menu-items menu-title">Наши контакты</div>  
-                        <a href=#" class="menu-items menu-items-simple"><img src="./img/Vector (1).png" class="icons">8 (900) 12 122 20</a>
-                        <a href=#" class="menu-items menu-items-simple"><img src="./img/Vector (2).png" class="icons">@happypet.ru</a>
+                    <div class="footer__blocks footer__block_2">
+                        <div class="block__items block__items_title">Приезжайте</div>
+                        <a href=#" class="block__items block__items_simple">г.Краснодар, ул Пушкина, д 129</a>
+                        <div class="block__items block__items_title">Наши контакты</div>  
+                        <a href=#" class="block__items block__items_simple"><img src="./img/Vector (1).png" class="block__items_icons">8 (900) 12 122 20</a>
+                        <a href=#" class="block__items block__items_simple"><img src="./img/Vector (2).png" class="block__items_icons">@happypet.ru</a>
                     </div>
-                    <div class="footer-blocks footer-blocks_3">
-                        <div class="menu-items menu-title">Помощь</div>
-                        <a href=#" class="menu-items menu-items-simple">Условия оплаты</a>
-                        <a href=#" class="menu-items menu-items-simple">Условия доставки</a>
-                        <a href=#" class="menu-items menu-items-simple">Гарантия</a>
-                        <a href=#" class="menu-items menu-items-simple">Вопрос-ответ</a>
+                    <div class="footer__blocks footer__block_3">
+                        <div class="block__items block__items_title">Помощь</div>
+                        <a href=#" class="block__items block__items_simple">Условия оплаты</a>
+                        <a href=#" class="block__items block__items_simple">Условия доставки</a>
+                        <a href=#" class="block__items block__items_simple">Гарантия</a>
+                        <a href=#" class="block__items block__items_simple">Вопрос-ответ</a>
+                        <div class="block__items_title block__items_title_lowest">@ Happy pet 2020</div>
                     </div>
                 </div>
-                <div class="bottom-menu-title">@ Happy pet 2020</div>
             </div>
         </footer>
     </div>

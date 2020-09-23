@@ -13,7 +13,17 @@
     margin-left: .5rem;
     }
 
-    &_left {
-        margin-right: auto;
+    
+    &_products-box {
+        padding: 10px 0 0 30px;
+    }
+
+    &_grid {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &_aboutus {
+        padding: 15px 0;
     }
 }

@@ -1,25 +1,23 @@
 .form-box {
-    padding: 0 10%;
+    margin: 0 auto;
 }
 
-.form-container {
+.form {
+    width: 60%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
+    padding: 20px 40px;
     border: 1px solid $forms-border-color;
     border-radius: 5px;
-    padding: 20px 40px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form-labels {
+    
+    &__labels {
     position: relative;
     top: 10px;
     left: 8%;
@@ -28,4 +26,5 @@
     background: #ffffff;
     font-family: $main-font-family;
     color: $forms-color;
+    }
 }

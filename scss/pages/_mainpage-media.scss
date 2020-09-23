@@ -1,108 +1,188 @@
-@media only screen and (max-width: 800px) {   
-    .main {
-        background: url("./../img/background.png") no-repeat;
-        background-size: 100%;
-        background-position-x: right;
+@media only screen and (max-width: 400px) {
+    .header {
+        height: 40vh;
     }
-
-    .page-elements {
-        margin: 0 3vw 5vh;
+    .banner-text {
+        &__title {
+            font-size: 1rem;
+        }
     }
-
-    .box-title {
-        font-size: 2.2rem;
-        margin: 0 0 20px;
+    .button-box__button {
+        padding: 5px 10px;
+        &_banner {
+            font-size: .6rem;
+        }
     }
+}
 
+@media only screen and (min-width: 400px) {
+    .header {
+        height: 40vh;
+    }
+    .banner-text {
+        &__title {
+            font-size: 1rem;
+        }
+    }
+    .button-box__button {
+        padding: 5px 10px;
+        &_banner {
+            font-size: .6rem;
+        }
+    }
+}
 
-    .navigation, .cart_icon {
+@media only screen and (min-width: 600px) {
+    .header {
+        height: 50vh;
+        &__main-part {
+            padding-top: 1vw;
+        }
+    }
+    .banner-text {
+        &__title {
+            font-size: 1.6rem;
+        }
+        &__text {
+            font-size: 1rem;
+        }
+    }   
+    .button-box__button_banner {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .banner-text__text {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .header {
+        height: 60vh;
+        &__main-part {
+            padding-top: 2vw;
+        }
+    }
+    .banner-text {
+        &__title {
+            font-size: 2rem;
+        }
+        &__text {
+            font-size: 1.2rem;
+        }
+    }   
+    .button-box__button {
+        padding: 15px 20px;
+        &_banner {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .header {
+        height: 70vh;
+        &__main-part {
+            padding-top: 3vw;
+        }
+    }
+    .banner-text {
+        &__title {
+            font-size: 2.4rem;
+        }
+        &__text {
+            font-size: 1.4rem;
+        }
+    }
+    .button-box__button_banner {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .header {
+        height: 85vh;
+        &__main-part {
+            padding-top: 4vw;
+        }
+    }
+    .banner-text {
+        &__title {
+            font-size: 2.8rem;
+        }
+        &__text {
+            font-size: 1.6rem;
+        }
+    }
+    .button-box__button_banner {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .header {
+        height: 100vh;
+    }
+    .banner-text {
+        &__title {
+            font-size: 3.3rem;
+        }
+        &__text {
+            font-size: 1.8rem;
+        }
+    }
+    .button-box__button_banner {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .header {
+        height: 115vh;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .header__navigation, .header__cart {
         display: none;
     }
     .burger-menu {
         display: inline-block;
         margin-left: auto;
     }
+    
+
+    .why-us__block {
+        width: 100%;
+    }
 
 
-    .main-page-banner {
-        margin-bottom: 25vh;
+    .product-cards {
+        &__item {
+        width: 60%;
 
-        &__left {
-            margin: 0 5%;
-
-            &_title {
-                font-size: 2.5rem;
-                margin-bottom: 1rem;
-            }
-            &_text {
+            &_1, &_2, &_6 {
                 display: none;
             }
         }
     }
-    .banner__left_button {
-        font-size: 1.2rem;
+
+    .form {
+        width: 100%;
     }
 
-
-    .why-choose__blocks {
-        flex-direction: column;
-    }
-
-
-    .catalogue-blocks {
-        margin-bottom: 1.5rem;
-        &_buttons {
-            padding: 5px 15px;
-            font-size: 1rem;
-        }
-    }
-    .product-card {
-        max-width: none;
-        width: 70%;
-        margin: 0 auto 1.5rem;
-    
-        &_1, &_2, &_6 {
-            display: none;
-        }
-    }
-
-
-    .photogrid-box {
-        display: none;
-    }
-
-
-    .form-container {
-        padding: 10px 0;
-    }
-
-
-    .about-box {
+    .aboutus {
         flex-wrap: wrap;
 
-        &__left {
-            width: 90%;
-            padding: 0 5%;
-        }
-        &__right {
-            width: 80%;
-            margin: 1rem 5% 0;
+        &__left, &__right {
+            width: 100%;
         }
     }
-
-    .footer-box {
-        margin-bottom: 0;
-        &_container {
-            flex-wrap: wrap;
-        }
-    }
-    .footer-blocks {
-        padding: 10px;
-    }
-    .menu-items {
-        margin: 8px 0;
-    }
-    .bottom-menu-title {
-        margin: 5%;
+    
+    .footer__container {
+        flex-wrap: wrap;
     }
 }

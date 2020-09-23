@@ -1,0 +1,17 @@
+.banner-text {
+    width: 45%;
+
+    &__item {
+        padding: 1.5vw 0;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 3.3rem;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 1.8rem;
+    }
+}

@@ -1,18 +1,30 @@
 .header {
-    display: flex;
-    justify-content: space-between;
+    height: 110vh;
+    
+    &__top-part {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__main-part {
+        padding-top: 5vw;
+    }
+}
+
+.logobox__logo {
+    max-width: 40vw;
 }
 
 .burger-menu {
     display: none;
-    padding: .3rem 1rem;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
     -ms-transition: 1s;
     -o-transition: 1s;
-    &_image {
+    &__image {
         width: 100%;
+        max-width: 12vw;
         height: auto;
     }
 

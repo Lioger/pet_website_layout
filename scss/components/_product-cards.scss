@@ -1,29 +1,34 @@
-.product-card {
+.product-cards {
+    &__item {
     width: 31%;
-    margin: 0 10px 20px;
-    min-width: 300px;
+    min-width: 250px;
+    margin: 10px;
+    padding: 30px 40px;
     background: #FFFFFF;
     box-shadow: 5px 5px 5px rgba(255, 180, 68, 0.34);
-    border-radius: 50px;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-
-    &_age {
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    }
+    
+    &__age {
         display: flex;
         align-items: center;
         font-size: 1.1rem;
-        margin-bottom: .5rem;
 
-        &_month-count {
+        &__month-count {
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 100%;
             width: 30px;
             height: 30px;
             background-color: #C3EDFF;
-            margin-right: 1.2rem;
+            margin-right: 10px;
+            border-radius: 100%;
             -webkit-border-radius: 100%;
             -moz-border-radius: 100%;
             -ms-border-radius: 100%;
@@ -31,43 +36,31 @@
         }
     }
 
-    &_image {
-        max-width: 100%;
-        height: auto;
+    &__image-box {
+        min-height: 250px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+}
 
-    &_description {
-        max-width: 100%;
-        padding: 5px;
-        margin-top: 1rem;
+.description {
 
-        &_pet-title {
-            font-size: 1.3rem;
-            margin: 5px 0 10px;
-        }
-    }
-
-    &_pet-description {
-        font-size: .9rem;
-        line-height: 1.4;
-    }
-
-    &_purchase {
-        padding-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        &_pet-price {
-            padding: 0 10px;
-            font-size: 1.2rem;
-        }
+    &__pet-title {
+        font-size: 1.3rem;
+        padding-bottom: 10px;
     }
 }
 
-.watch-next_left {
-     padding: .3rem 0 0 1.8rem;
+.purchase {
+    margin-top: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__pet-price {
+        padding: 0 10px 0 100px;
+        font-size: 1.2rem;
+    }
 }

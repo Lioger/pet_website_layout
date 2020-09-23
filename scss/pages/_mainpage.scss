@@ -1,36 +1,19 @@
 .main {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    background: url("./../img/background.png") no-repeat, url("./../img/1.png") no-repeat 0 40%;
+    background: url("./../img/background.png") no-repeat, url("./../img/1.png") no-repeat 0 140vh;
+    background-size: contain;
 }
 
-.page-elements {
-    margin: 0 20vw 50px;
+.header, .mainpart, .footer {
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 20px 50px;
     font-family: $main-font-family;
     line-height: 1.2;
 }
 
-.main-page-banner__left {
-    max-width: 100%;
-    margin: 10vh auto 50vh;
-
-    &_title {
-        font-weight: 600;
-        font-size: 3.3rem;
-    }
-
-    &_text {
-        width: 55%;
-        font-weight: 300;
-        font-size: 1.8rem;
-    }
-
-    &_title, &_text {
-        margin-bottom: 3rem;
-    }
-}
-
-.banner-button-box {
-    padding-top: 20px;
+.container {
+    padding: 20px 0;
 }

@@ -1,0 +1,16 @@
+.why-us {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    &__block {
+        width: 27%;
+        min-width: 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon-box {
+        padding-right: 15px;
+    }
+}

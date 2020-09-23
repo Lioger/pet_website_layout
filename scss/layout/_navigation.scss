@@ -1,15 +1,14 @@
 .navigation {
+    width: 50%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px 20px;
+    font-size: 1.1rem;
 
-    &_elements {
-        margin: 15px 20px;
+    &__elements {
         color: $main-text-color;
         text-decoration: none;
-        font-family: $main-font-family;
         border-bottom: 1px solid rgba(0, 0, 0, 0);
         transition: border-bottom .3s;
         -webkit-transition: border-bottom .3s;
