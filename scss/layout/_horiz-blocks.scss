@@ -1,19 +1,14 @@
 .why-choose__blocks {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .why-choose__block {
     display: flex;
     align-items: center;
-    width: 30%;
-    padding: .3rem .2rem;
-}
-
-.why-choose__mini-titles {
-    margin: 0;
+    padding: 10px 30px 10px 0;
 }
 
 .why-choose__block-text {
-    margin-left: 1.5rem;
+    margin-left: 20px;
 }

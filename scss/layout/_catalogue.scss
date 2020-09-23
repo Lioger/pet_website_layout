@@ -4,7 +4,8 @@
 
 .catalogue-blocks {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 5rem;
 }
 
@@ -16,5 +17,4 @@
 .product-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }

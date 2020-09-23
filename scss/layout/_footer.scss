@@ -1,15 +1,13 @@
 .footer {
-    width: 100%;
-    height: auto;
     background: linear-gradient(91.52deg, rgba(255, 141, 6, 0.57) -8.95%, #F79C17 102.01%);
 
     &-box {
-        margin: 2.5rem auto 0;
         display: flex;
         flex-direction: column;
 
         &_container {
             display: flex;
+            justify-content: space-between;
         }
     }
 }
@@ -18,25 +16,13 @@
     display: flex;
     font-weight: 600;
     justify-content: flex-end;
-    align-items: center;
-    margin: 2.5rem 0 2rem;
+    padding: 20px 50px;
 }
 
 .footer-blocks {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 1rem;
-
-    &_1 {
-        width: 45%;
-    }
-    &_2 {
-        width: 35%;
-    }
-    &_3 {
-        width: 15%;
-    }
+    padding: 10px 30px;
 }
 
 .logo {
@@ -63,7 +49,9 @@
 }
 
 .social-nets {
-    width: 23%;
     display: flex;
-    justify-content: space-between;
+
+    &_logo {
+        padding: 0 15px 0 0;
+    }
 }

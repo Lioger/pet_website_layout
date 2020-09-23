@@ -7,15 +7,15 @@
 }
 
 .page-elements {
-    margin: 0 auto 5rem;
-    width: $main-page-width;
+    margin: 0 20vw 50px;
     font-family: $main-font-family;
     line-height: 1.2;
+    padding: 0 0 10px;
 }
 
 .main-page-banner__left {
     max-width: 100%;
-    margin: 10rem auto 25rem;
+    margin: 10vh auto 50vh;
 
     &_title {
         font-weight: 600;
@@ -31,4 +31,8 @@
     &_title, &_text {
         margin-bottom: 3rem;
     }
+}
+
+.banner-button-box {
+    padding-top: 20px;
 }

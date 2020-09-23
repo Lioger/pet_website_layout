@@ -1,9 +1,8 @@
 .header {
-    margin: 2rem auto 0;
     display: flex;
+    justify-content: flex-start;
 
     &_logo {
-        padding-top: .5rem;
     }
 }
 
@@ -26,5 +25,5 @@
         -moz-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
         -o-transform: rotate(180deg);
-}
+    }
 }
