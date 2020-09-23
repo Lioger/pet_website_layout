@@ -724,6 +724,7 @@ html {
   }
   .banner__left_button {
     width: 60%;
+    font-size: 1.2rem;
   }
   .why-choose-box {
     width: 75%;
@@ -747,6 +748,7 @@ html {
   }
   .catalogue-blocks_buttons {
     padding: .2rem;
+    font-size: 1rem;
   }
   .product-card {
     width: 80%;
