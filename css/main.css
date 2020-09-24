@@ -96,7 +96,7 @@ html {
   font-size: 1rem;
 }
 
-.input-group {
+.form__input-group {
   width: 90%;
 }
 
@@ -654,7 +654,7 @@ html {
 
 @media only screen and (max-width: 400px) {
   .header {
-    height: 40vh;
+    height: 30vh;
   }
   .banner-text__title {
     font-size: 1rem;
@@ -669,22 +669,22 @@ html {
 
 @media only screen and (min-width: 400px) {
   .header {
-    height: 40vh;
+    height: 36vh;
   }
   .banner-text__title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .button-box__button {
     padding: 5px 10px;
   }
   .button-box__button_banner {
-    font-size: .6rem;
+    font-size: .8rem;
   }
 }
 
 @media only screen and (min-width: 600px) {
   .header {
-    height: 50vh;
+    height: 48vh;
   }
   .header__main-part {
     padding-top: 1vw;
@@ -708,7 +708,7 @@ html {
 
 @media only screen and (min-width: 800px) {
   .header {
-    height: 60vh;
+    height: 62vh;
   }
   .header__main-part {
     padding-top: 2vw;
@@ -729,7 +729,7 @@ html {
 
 @media only screen and (min-width: 1000px) {
   .header {
-    height: 70vh;
+    height: 75vh;
   }
   .header__main-part {
     padding-top: 3vw;
@@ -747,7 +747,7 @@ html {
 
 @media only screen and (min-width: 1200px) {
   .header {
-    height: 85vh;
+    height: 87vh;
   }
   .header__main-part {
     padding-top: 4vw;
