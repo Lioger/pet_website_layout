@@ -6,13 +6,13 @@
 
     &__container {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     &__blocks {
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        padding: 10px 50px;
     }
 }
 

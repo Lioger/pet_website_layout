@@ -26,7 +26,6 @@ html {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 20px 50px;
   font-family: "Arial";
   line-height: 1.2;
 }
@@ -63,7 +62,6 @@ html {
   -webkit-box-shadow: 0px 5px 35px rgba(255, 66, 66, 0.66);
           box-shadow: 0px 5px 35px rgba(255, 66, 66, 0.66);
   color: #fff;
-  font-size: 1.6rem;
   font-weight: 600;
 }
 
@@ -135,7 +133,6 @@ html {
   color: #000;
   font-family: "Arial";
   font-weight: 600;
-  font-size: 2.5rem;
   padding-bottom: 20px;
 }
 
@@ -145,9 +142,8 @@ html {
 
 .product-cards__item {
   width: 31%;
-  min-width: 250px;
+  min-width: 200px;
   margin: 10px;
-  padding: 30px 40px;
   background: #FFFFFF;
   -webkit-box-shadow: 5px 5px 5px rgba(255, 180, 68, 0.34);
           box-shadow: 5px 5px 5px rgba(255, 180, 68, 0.34);
@@ -197,7 +193,7 @@ html {
 }
 
 .product-cards__image-box {
-  min-height: 250px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,6 +203,11 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.image-box__image {
+  min-width: 100%;
+  height: auto;
 }
 
 .description__pet-title {
@@ -271,10 +272,6 @@ html {
   padding: 15px 0;
 }
 
-.header {
-  height: 110vh;
-}
-
 .header__top-part {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,12 +281,8 @@ html {
           justify-content: space-between;
 }
 
-.header__main-part {
-  padding-top: 5vw;
-}
-
 .logobox__logo {
-  max-width: 40vw;
+  max-width: 30vw;
 }
 
 .burger-menu {
@@ -303,7 +296,7 @@ html {
 
 .burger-menu__image {
   width: 100%;
-  max-width: 12vw;
+  max-width: 10vw;
   height: auto;
 }
 
@@ -357,12 +350,10 @@ html {
 
 .banner-text__title {
   font-weight: 600;
-  font-size: 3.3rem;
 }
 
 .banner-text__text {
   font-weight: 300;
-  font-size: 1.8rem;
 }
 
 .why-us {
@@ -600,8 +591,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__blocks {
@@ -612,7 +604,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10px;
+  padding: 10px 50px;
 }
 
 .block__items {
@@ -653,11 +645,24 @@ html {
 }
 
 @media only screen and (max-width: 400px) {
+  .header, .mainpart, .footer {
+    padding: 10px;
+    font-size: .8rem;
+  }
   .header {
-    height: 30vh;
+    height: 28vh;
+  }
+  .banner-text {
+    width: 55%;
   }
   .banner-text__title {
     font-size: 1rem;
+  }
+  .box-title {
+    font-size: 1.5rem;
+  }
+  .blocks__buttons {
+    font-size: .8rem;
   }
   .button-box__button {
     padding: 5px 10px;
@@ -665,11 +670,24 @@ html {
   .button-box__button_banner {
     font-size: .6rem;
   }
+  .product-cards__item {
+    padding: 15px;
+  }
 }
 
 @media only screen and (min-width: 400px) {
+  .header, .mainpart, .footer {
+    padding: 10px;
+    font-size: .8rem;
+  }
   .header {
-    height: 36vh;
+    height: 38vh;
+  }
+  .box-title {
+    font-size: 1.7rem;
+  }
+  .banner-text {
+    width: 55%;
   }
   .banner-text__title {
     font-size: 1.2rem;
@@ -678,16 +696,29 @@ html {
     padding: 5px 10px;
   }
   .button-box__button_banner {
-    font-size: .8rem;
+    font-size: .73rem;
+  }
+  .product-cards__item {
+    padding: 15px;
   }
 }
 
 @media only screen and (min-width: 600px) {
+  .header, .mainpart, .footer {
+    padding: 20px 50px;
+    font-size: .9rem;
+  }
   .header {
-    height: 48vh;
+    height: 49vh;
   }
   .header__main-part {
     padding-top: 1vw;
+  }
+  .box-title {
+    font-size: 1.8rem;
+  }
+  .blocks__buttons {
+    font-size: 1.2rem;
   }
   .banner-text__title {
     font-size: 1.6rem;
@@ -697,6 +728,9 @@ html {
   }
   .button-box__button_banner {
     font-size: .8rem;
+  }
+  .product-cards__item {
+    padding: 20px;
   }
 }
 
@@ -708,10 +742,13 @@ html {
 
 @media only screen and (min-width: 800px) {
   .header {
-    height: 62vh;
+    height: 68vh;
   }
   .header__main-part {
     padding-top: 2vw;
+  }
+  .box-title {
+    font-size: 2.2rem;
   }
   .banner-text__title {
     font-size: 2rem;
@@ -725,6 +762,9 @@ html {
   .button-box__button_banner {
     font-size: 1rem;
   }
+  .product-cards__item {
+    padding: 30px 40px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -733,6 +773,12 @@ html {
   }
   .header__main-part {
     padding-top: 3vw;
+  }
+  .box-title {
+    font-size: 2.5rem;
+  }
+  .header, .mainpart, .footer {
+    font-size: 1rem;
   }
   .banner-text__title {
     font-size: 2.4rem;
@@ -765,7 +811,10 @@ html {
 
 @media only screen and (min-width: 1400px) {
   .header {
-    height: 100vh;
+    height: 115vh;
+  }
+  .header__main-part {
+    padding-top: 5vw;
   }
   .banner-text__title {
     font-size: 3.3rem;
@@ -778,13 +827,11 @@ html {
   }
 }
 
-@media only screen and (min-width: 1400px) {
-  .header {
-    height: 115vh;
-  }
-}
-
 @media only screen and (max-width: 800px) {
+  .main {
+    background: url("./../img/background.png") no-repeat;
+    background-size: contain;
+  }
   .header__navigation, .header__cart {
     display: none;
   }
@@ -796,7 +843,7 @@ html {
     width: 100%;
   }
   .product-cards__item {
-    width: 60%;
+    width: 80%;
   }
   .product-cards__item_1, .product-cards__item_2, .product-cards__item_6 {
     display: none;
