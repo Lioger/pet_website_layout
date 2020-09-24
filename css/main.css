@@ -194,6 +194,7 @@ html {
 
 .product-cards__image-box {
   padding: 10px;
+  min-height: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,7 +207,7 @@ html {
 }
 
 .image-box__image {
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -824,6 +825,12 @@ html {
   }
   .button-box__button_banner {
     font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .product-cards__item {
+    width: 70%;
   }
 }
 

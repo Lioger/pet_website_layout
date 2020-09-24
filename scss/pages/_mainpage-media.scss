@@ -201,6 +201,14 @@
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .product-cards {
+        &__item {
+        width: 70%;
+        }
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .main {
         background: url("./../img/background.png") no-repeat;

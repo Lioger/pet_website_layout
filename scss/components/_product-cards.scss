@@ -37,6 +37,7 @@
 
     &__image-box {
         padding: 10px;
+        min-height: 280px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -44,7 +45,7 @@
 }
 
 .image-box__image {
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
